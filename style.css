@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #3a6cf4;
+  }
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Beginn Header */
+header{
+    width: 100%;
+    background-color: #f0f0f0;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bar{
+    display: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;  
+}
+
+.navigation a:hover {
+    color: #193fa8;
+}
+
+
+/* End Header */
+
+/* Beginn main section */
+
+section{
+    padding: 100px 160px;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(fotos/Design\ ohne\ Titel.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.main div h2{
+    color: #f0f0f0;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.main div h2 span{
+    color: var(--main-color);
+    font-size: 2.5em;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.main div h3 {
+    color: #f0f0f0;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+
+}
+
+.main div .main-btn{
+    background-color: var(--main-color);
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 16px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: inline-block;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    transform: scale(1.1);
+}
+
+.main div .social-icone {
+    margin-left: 75px;
+}
+
+.main div .social-icone a{
+    color: #f0f0f0;
+    margin: 15px 10px 0 0;
+    font-size: 25px;
+    
+    
+}
+
+/* End main section */
+
+/* Beginn services section */
+
+ .title{
+    color: var(--main-color);
+    font-size: 2.5em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content .card{
+    width: 260px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(1 1 1 / 14%);
+    margin-right: 17px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+ .content .card .icone{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content .card .icone i{
+    font-size: 88px;
+    color: #193fa8;
+    
+}
+
+.content .card .info-card{
+    text-align: center;
+}
+
+ .content .card .info-card h3{
+    color: var(--main-color);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+ .content .card .info-card p{
+    font-weight: 300;
+}
+
+/* End services section */
+
+/* Beginn projekten section */
+ 
+.projekten{
+    background-color: #191447;
+    position: relative;
+}
+.content-projekten{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.content-projekten .card-projekten{
+    width: 250px;
+    background-color: #f0f0f0;
+    margin: 20px;
+    border: #fff 3px solid;
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+
+.card-projekten:hover{
+    transform: scale(1.1);
+}
+
+.card-projekten:hover .img-proj{
+    opacity: 0.9;
+}
+
+.content-projekten .card-projekten img{
+   max-width: 100%;
+   border-radius: 10px;
+}
+
+.content-projekten .card-projekten .info-proj{
+    padding: 11px 11px 7px;
+}
+
+.content-projekten .card-projekten .info-proj p{
+    margin-bottom: 10px;
+}
+
+.content-projekten .card-projekten .info-proj p span{
+    border: rgb(97, 97, 97) 1px solid ;
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 0.9em;
+    color: #191447;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.content-projekten .card-projekten .info-proj strong{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.content-projekten .card-projekten .info-proj strong a {
+    text-decoration: none;
+    color: var(--main-color) ;
+}
+
+/* End projekten section */
+
+/* Beginn kontak section */
+
+.kontakt .card .info-card p{
+    color: black;
+    font-weight: bold;
+}
+
+/* End kontak section */
+
+/* Beginn footer section */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #191447;
+    color: #fff;
+}
+
+.footer .footer-titel{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer .footer-titel span{
+    color: #193fa8;
+}
+
+.footer .social-icone i {
+    padding-right: 1.5em;
+    font-size: 1.3em;
+}
+
+/* end footer section */
+
+@media (max-width: 767px){
+    header{
+        padding: 10px 30px;
+        position: relative;
+    }
+
+    .logo{
+        font-size: 1.2em;
+    }
+    .navigation {
+        position: absolute;
+        top: 49px;
+        width: 100%;
+        display: none;
+        left: 0;
+    }
+
+    .fa-bars:hover .navigation {
+        display: inline-block;
+    }
+
+    .navigation a{
+        padding: 10px;
+        font-size: 1em;
+        display: flex;
+        background-color: #f0f0f0;
+    }
+
+
+    .navigation a:not(:last-child){
+        border-bottom: #c4c4c4 1px solid;
+    }
+
+    .bar{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .bar .fa-bars{
+        position: absolute;
+        color: var(--main-color);
+        font-size: 1.25em;
+    }
+
+    section{
+        padding: 10px 30px;
+    }
+ 
+    .main div h2{
+        font-size: 1em;
+    }
+    .main div h2 span{
+        font-size: 1.8em;
+    }
+
+    .main div h3{
+        font-size: 1.2em;
+    }
+
+    .main div .main-btn{
+        padding: 10px;
+        font-size: 0.7em;
+        border-radius: 10px;
+    }
+
+    .main div .social-icone i:first-of-type{
+        margin-left: 35px;
+    }
+
+    .main div .social-icone i {
+        font-size: 18px;
+    }
+
+    .title{
+        font-size: 1.5em;
+    }
+
+    .content .card .icone i{
+        font-size: 55px;
+        color: #193fa8;
+        
+    }
+
+    .content .card .info-card h3{
+        font-size: 1.2em;
+    }
+
+    .content .card .info-card p{
+        font-size: 0.8em;
+    }
+
+    .footer{
+        padding: 1.7em;
+    }
+    
+    .footer .footer-titel{
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .footer .social-icone i {
+        padding-right: 1em;
+        font-size: 1em;
+    }
+
+}
+
+.scrool-icone .up{
+    position: fixed;
+    font-size: 20px;
+    height: 39px;
+    width: 39px;
+    right: -50px;
+    bottom: 98px;
+    background-color: #193fa8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.onload{
+    display: none;
+}
+.up.show{
+    right: 20px;
+}
+
+
+
+
+
+
+
